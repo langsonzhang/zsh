@@ -1,4 +1,12 @@
+# export LSCOLORS=Axaxaxaxaxaxaxaxaxaxax
+
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias playground='cd ~/Documents/Playground'
+alias zshrc='subl ~/.zshrc'
+
+ls() {
+    command ls "-F" "$@"
+}
 
 # ––––––––– Prompt Theme ––––––––––––––––––––––––––––––––––––––
 
@@ -78,8 +86,4 @@ PROMPT+=' %% '
 # ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 
-# export LSCOLORS=Axaxaxaxaxaxaxaxaxaxax
 
-ls() {
-    command ls "-F" "$@"
-}
